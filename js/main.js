@@ -39,7 +39,6 @@ form.addEventListener("submit", (evento) => {
         itens.push(itemAtual)
     
     }
-
     
     //Salva item no LocalStorage
     localStorage.setItem("itens", JSON.stringify(itens))
@@ -47,6 +46,8 @@ form.addEventListener("submit", (evento) => {
     nome.value=""
     quantidade.value=""
 })
+
+
 
 function criaElemento(item){
     /*<li class="item"><strong>7</strong>Camisas</li>*/
@@ -74,6 +75,7 @@ function botaoDeleta(id){
 
     deletaBotao.addEventListener('click', function (){
         deletaElemento(this.parentNode, id)
+        
     })
 
     return deletaBotao
@@ -82,9 +84,12 @@ function botaoDeleta(id){
 function deletaElemento(tag, id){
     tag.remove()
 
+    //Remove o item do array Itens
     itens.splice(itens.findIndex(elemento => elemento.id === id), 1)
 
-    console.log(itens)
+
+    //Atualiza o o localStorage enviando novo array com item excluido
+    localStorage.setItem("itens", JSON.stringify(itens))
     
 }
 
