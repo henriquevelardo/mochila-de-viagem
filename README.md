@@ -7,3 +7,9 @@ Desenvolvimento:
 - Desenvolvido utilizando HTML, CSS3 e JavaScript
 - Projeto focado em aplicação mobile, utilizando medias querys para responsividade
 - O armazenamento é local utilizando o LocalStorage do navegador do dispositivo
+
+
+Créditos:
+
+- Desenvolvedor: Henrique Lima Velardo
+- Projeto de estudos na Alura
