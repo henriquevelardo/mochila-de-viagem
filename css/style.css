@@ -133,6 +133,10 @@ html {
 
 @media screen and (max-width: 768px) {
     
+    body{
+        margin: 0;
+    }
+
     .conteudo{
         flex-direction: column;
         padding: 0;
@@ -155,5 +159,5 @@ html {
         text-align: center;
     }
     
-    
+
 }
