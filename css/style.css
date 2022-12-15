@@ -130,3 +130,30 @@ html {
     font-weight: 400;
 }
 
+
+@media screen and (max-width: 768px) {
+    
+    .conteudo{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .principal{
+        flex-direction: column;
+        min-width:100vw;
+        align-items: center;
+        padding: 3em 1em 2em;
+    }
+
+    .principal::before{
+        content: "Digite os itens e quantidade para guardar na mochila!";
+        font-family: 'Roboto', cursive;
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    
+    
+}
